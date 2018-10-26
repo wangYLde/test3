@@ -1,0 +1,51 @@
+{% load staticfiles %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'skin_/main.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'jquery.dialog.css' %}" />
+<script type="text/javascript" src="{% static 'jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'global.js' %}"></script>
+
+
+    {% block headerjs %}
+
+    {% endblock %}
+
+
+
+
+<title>数字管理系统</title>
+</head>
+
+<body>
+
+{% block header %}
+
+{% endblock %}
+<div id="container">
+
+
+    {% block main %}
+
+    {% endblock %}
+    
+
+</div>
+
+
+{% block footer %}
+
+{% endblock %}
+
+{% block footerjs %}
+
+{% endblock %}
+
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+
+{% block headerjs %}
+
+<link rel="stylesheet" href="/static/zTreeStyle/zTreeStyle.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="/static/skin_/nav.css" />
+{% endblock %}
+
+{% block main %}
+    <div id="bd">
+        {% include 'left.html' %}
+
+        <div class="main">
+
+        <div class="title">
+            <i class="sidebar-show"></i>
+            <ul class="tab ue-clear">
+
+            </ul>
+            <i class="tab-more"></i>
+            <i class="tab-close"></i>
+        </div>
+        <div class="content">
+        </div>
+    </div>
+
+    </div>
+
+{% endblock %}
